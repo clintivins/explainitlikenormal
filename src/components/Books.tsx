@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { books } from "@/lib/books";
+import { asset } from "@/lib/config";
 
 const CheckIcon = () => (
   <svg
@@ -49,7 +50,7 @@ export default function Books() {
                     }`}
                   />
                   <Image
-                    src={book.cover}
+                    src={asset(book.cover)}
                     alt={`${book.title} cover`}
                     width={320}
                     height={480}

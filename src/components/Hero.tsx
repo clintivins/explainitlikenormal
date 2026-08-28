@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { books } from "@/lib/books";
+import { asset } from "@/lib/config";
 
 export default function Hero() {
   return (
@@ -65,7 +66,7 @@ export default function Hero() {
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-brand-blue/10 blur-2xl" />
           <div className="relative animate-float">
             <Image
-              src={books[0].cover}
+              src={asset(books[0].cover)}
               alt={books[0].title}
               width={480}
               height={720}
@@ -73,14 +74,14 @@ export default function Hero() {
               className="mx-auto w-[78%] rounded-lg shadow-2xl shadow-black/50 ring-1 ring-white/10"
             />
             <Image
-              src={books[3].cover}
+              src={asset(books[3].cover)}
               alt={books[3].title}
               width={300}
               height={450}
               className="absolute -bottom-6 -left-2 w-[40%] rotate-[-8deg] rounded-md shadow-2xl shadow-black/60 ring-1 ring-white/10"
             />
             <Image
-              src={books[2].cover}
+              src={asset(books[2].cover)}
               alt={books[2].title}
               width={300}
               height={450}
