@@ -36,7 +36,7 @@ export default function Nav() {
             alt="Explain It Like I am Normal banner logo"
             width={2142}
             height={734}
-            className="h-10 w-auto max-w-[78vw] drop-shadow-[0_5px_14px_rgba(0,0,0,0.38)] transition-transform duration-300 group-hover:-translate-y-0.5 sm:h-12 sm:max-w-[64vw] md:h-14 md:max-w-[44vw] lg:h-16"
+            className="h-[5.625rem] w-auto max-w-[86vw] drop-shadow-[0_5px_14px_rgba(0,0,0,0.38)] transition-transform duration-300 group-hover:-translate-y-0.5 sm:h-[6.75rem] sm:max-w-[72vw] md:h-[7.875rem] md:max-w-[54vw] lg:h-36"
             priority
           />
         </a>

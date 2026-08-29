@@ -20,13 +20,11 @@ export default function Hero() {
             <br />
             <span className="text-brand-yellow">explained like</span>
             <br />
-            <span className="brush-underline">you&apos;re normal.</span>
+            <span>you&apos;re normal.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-            I&apos;m{" "}
-            <span className="font-semibold text-ink">Clinton Wesley Ivins</span>
-            . I write plain-English books that turn confusing subjects — AI,
+            Hey, I&apos;m Clint. I write plain-English books that turn confusing subjects — AI,
             crypto, automation — into something anyone can actually use. No
             jargon. No hype. Just answers that make sense.
           </p>
