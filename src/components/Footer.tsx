@@ -63,8 +63,16 @@ export default function Footer() {
                     href="https://www.linkedin.com/in/clinton-ivins-8bb15142"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-ink/90 hover:text-brand-yellow"
+                    className="inline-flex items-center gap-2 text-ink/90 hover:text-brand-yellow"
                   >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M4.98 3.5A2.5 2.5 0 0 0 2.5 6a2.5 2.5 0 0 0 2.48 2.5h.02A2.5 2.5 0 0 0 7.5 6 2.5 2.5 0 0 0 5 3.5zM3 9.5h4v11H3zm7 0h3.8v1.6h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.08V20.5h-4v-4.77c0-1.14-.02-2.61-1.59-2.61-1.59 0-1.83 1.24-1.83 2.53v4.85h-4z" />
+                    </svg>
                     LinkedIn
                   </a>
                 </li>
