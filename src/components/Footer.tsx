@@ -11,7 +11,7 @@ export default function Footer() {
               Stop guessing. <span className="text-brand-yellow">Start doing.</span>
             </h2>
             <p className="mt-4 max-w-md text-muted">
-              Grab a book, get in touch, or say hello. Whether it's AI, crypto or
+              Grab a book, get in touch, or say hello. Whether it&apos;s AI, crypto or
               automation — the goal is the same: make it make sense.
             </p>
             <a
@@ -85,7 +85,7 @@ export default function Footer() {
           <p>
             © {year} {AUTHOR.name}. All rights reserved.
           </p>
-          <p className="hand text-lg text-brand-blue">Explain it like I'm normal.</p>
+          <p className="hand text-lg text-brand-blue">Explain it like I&apos;m normal.</p>
         </div>
       </div>
     </footer>

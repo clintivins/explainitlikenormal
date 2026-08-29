@@ -19,7 +19,7 @@ export default function About() {
             <span className="text-brand-yellow">Wesley Ivins</span>
           </h2>
           <p className="hand mt-3 text-3xl text-brand-blue">
-            I don't just answer questions. I get stuff done.
+            I don&apos;t just answer questions. I get stuff done.
           </p>
 
           <div className="mt-8 rounded-2xl border border-white/10 bg-navy-800/60 p-6">
@@ -47,11 +47,11 @@ export default function About() {
             spanning identity &amp; access management, cloud architecture and
             enterprise security. He has led delivery for global organisations
             across banking, professional services and financial services, and
-            holds some of the industry's most respected certifications.
+            holds some of the industry&apos;s most respected certifications.
           </p>
           <p>
-            But his day job comes with a frustration he couldn't shake: the
-            technology that's reshaping everyone's life is almost always
+            But his day job comes with a frustration he couldn&apos;t shake: the
+            technology that&apos;s reshaping everyone&apos;s life is almost always
             explained in a language only insiders understand. Friends, family
             and colleagues kept asking the same honest questions —{" "}
             <span className="italic text-ink/90">
@@ -62,16 +62,16 @@ export default function About() {
             So he started writing the books he wished existed: clear, practical,
             hype-free guides that respect your time and your intelligence. The{" "}
             <span className="font-semibold text-ink">
-              “Explain It Like I'm Normal”
+              “Explain It Like I&apos;m Normal”
             </span>{" "}
-            series takes the subjects everyone's talking about — artificial
+            series takes the subjects everyone&apos;s talking about — artificial
             intelligence, AI agents, cryptocurrency and building income with AI —
-            and makes them genuinely usable for people who don't have a tech
-            degree and don't want one.
+            and makes them genuinely usable for people who don&apos;t have a tech
+            degree and don&apos;t want one.
           </p>
           <p>
             Based in the United Kingdom, Clinton writes with one rule in mind: if
-            your neighbour couldn't follow it, it doesn't belong in the book.
+            your neighbour couldn&apos;t follow it, it doesn&apos;t belong in the book.
           </p>
 
           <blockquote className="mt-8 rounded-2xl border-l-4 border-brand-yellow bg-navy-800/60 p-6 text-ink">

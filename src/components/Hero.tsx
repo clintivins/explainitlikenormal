@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-center md:pt-24">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/40 bg-brand-blue/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-blue">
-            The “Explain It Like I'm Normal” series
+            The “Explain It Like I&apos;m Normal” series
           </span>
 
           <h1 className="display mt-6 text-5xl text-ink sm:text-6xl lg:text-7xl">
@@ -20,11 +20,11 @@ export default function Hero() {
             <br />
             <span className="text-brand-yellow">explained like</span>
             <br />
-            <span className="brush-underline">you're normal.</span>
+            <span className="brush-underline">you&apos;re normal.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-            I'm{" "}
+            I&apos;m{" "}
             <span className="font-semibold text-ink">Clinton Wesley Ivins</span>
             . I write plain-English books that turn confusing subjects — AI,
             crypto, automation — into something anyone can actually use. No

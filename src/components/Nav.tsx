@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AUTHOR } from "@/lib/books";
+import { asset } from "@/lib/config";
 
 const links = [
   { href: "#books", label: "Books" },
@@ -29,13 +30,15 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#top" className="group flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-yellow text-navy-950 font-display text-lg">
-            CI
-          </span>
-          <span className="hidden font-semibold tracking-tight sm:block">
-            {AUTHOR.name}
-          </span>
+        <a href="#top" className="group flex min-w-0 items-center" aria-label="Explain It Like I am Normal home">
+          <Image
+            src={asset("/site-banner.png")}
+            alt="Explain It Like I am Normal banner logo"
+            width={2142}
+            height={734}
+            className="h-10 w-auto max-w-[78vw] drop-shadow-[0_5px_14px_rgba(0,0,0,0.38)] transition-transform duration-300 group-hover:-translate-y-0.5 sm:h-12 sm:max-w-[64vw] md:h-14 md:max-w-[44vw] lg:h-16"
+            priority
+          />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
