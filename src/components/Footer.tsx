@@ -103,8 +103,21 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:info@explainitnormal.co.uk"
-                    className="text-ink/90 hover:text-brand-yellow"
+                    className="inline-flex items-center gap-2 text-ink/90 hover:text-brand-yellow"
                   >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+                      <path d="M3 7l9 6 9-6" />
+                    </svg>
                     Email
                   </a>
                 </li>
