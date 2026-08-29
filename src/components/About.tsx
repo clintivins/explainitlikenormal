@@ -39,47 +39,38 @@ export default function About() {
 
         <div className="space-y-5 text-lg leading-relaxed text-muted">
           <p>
-            Clinton is a senior cybersecurity and technology leader with more
-            than{" "}
-            <span className="font-semibold text-ink">
-              20 years of experience
-            </span>{" "}
-            spanning identity &amp; access management, cloud architecture and
-            enterprise security. He has led delivery for global organisations
-            across banking, professional services and financial services, and
-            holds some of the industry&apos;s most respected certifications.
+            Born in Durban, South Africa, Clinton developed an early passion
+            for information technology, not only learning how it worked, but
+            finding simple ways to understand and explain the ideas behind it.
+            That curiosity grew into a career spanning more than 20 years,
+            during which he worked with large organisations to develop and
+            secure the technology solutions they rely on every day.
           </p>
           <p>
-            But his day job comes with a frustration he couldn&apos;t shake: the
-            technology that&apos;s reshaping everyone&apos;s life is almost always
-            explained in a language only insiders understand. Friends, family
-            and colleagues kept asking the same honest questions —{" "}
-            <span className="italic text-ink/90">
-              “What actually is AI? Is crypto a scam? Where do I even start?”
-            </span>
+            After moving to the United Kingdom in 2023, Clinton continued
+            applying his experience across information technology,
+            cybersecurity, cloud services and digital innovation. Along the
+            way, he became increasingly aware of a growing problem: as
+            technology advances, the language used to explain it often becomes
+            more complicated. Subjects such as artificial intelligence and
+            cryptocurrency can leave everyday people wondering what matters,
+            what doesn&apos;t and where they should begin.
           </p>
           <p>
-            So he started writing the books he wished existed: clear, practical,
-            hype-free guides that respect your time and your intelligence. The{" "}
+            That realisation inspired the{" "}
             <span className="font-semibold text-ink">
               “Explain It Like I&apos;m Normal”
             </span>{" "}
-            series takes the subjects everyone&apos;s talking about — artificial
-            intelligence, AI agents, cryptocurrency and building income with AI —
-            and makes them genuinely usable for people who don&apos;t have a tech
-            degree and don&apos;t want one.
+            series, with practical books created for curious readers who do not
+            have a technical background.
           </p>
           <p>
-            Based in the United Kingdom, Clinton writes with one rule in mind: if
-            your neighbour couldn&apos;t follow it, it doesn&apos;t belong in the book.
+            Based in the United Kingdom, Clinton writes to simplify the
+            message, remove unnecessary jargon and help readers understand what
+            they genuinely need to know. His guiding principle is simple:
+            technology should feel useful and accessible, not confusing or
+            intimidating.
           </p>
-
-          <blockquote className="mt-8 rounded-2xl border-l-4 border-brand-yellow bg-navy-800/60 p-6 text-ink">
-            <p className="text-xl font-medium">
-              “Chatbots answer questions. I want to help you actually get things
-              done — without the geek speak.”
-            </p>
-          </blockquote>
         </div>
       </div>
     </section>
