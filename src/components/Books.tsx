@@ -26,7 +26,7 @@ export default function Books() {
             The library
           </span>
           <h2 className="display mt-3 text-4xl text-ink sm:text-5xl">
-            Four books. <span className="text-brand-yellow">Zero jargon.</span>
+            Five books. <span className="text-brand-yellow">Zero jargon.</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
             Each guide takes one big, intimidating topic and breaks it down into

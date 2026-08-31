@@ -87,4 +87,20 @@ export const books: Book[] = [
     accent: "blue",
     amazonUrl: amazonSearch("Making Money with AI Explain It Like I'm Normal"),
   },
+  {
+    slug: "scams-explain-it-like-im-normal",
+    title: "Scams: Explain It Like I'm Normal",
+    series: "Explain It Like I'm Normal",
+    cover: "/books/scams.png",
+    tagline: "Pause. Check. Verify.",
+    description:
+      "How AI voice clones, fake invoices, romance scams and fake investments actually work — and what you can do to protect yourself.",
+    highlights: [
+      "Spot the red flags",
+      "Verify before you trust",
+      "Protect your money",
+    ],
+    accent: "yellow",
+    amazonUrl: "https://www.amazon.co.uk/dp/B0HH7SXSFT",
+  },
 ];

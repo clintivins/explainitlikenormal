@@ -59,7 +59,7 @@ export default function Hero() {
             </div>
           </dl>
         </div>
-
+              <dt className="text-3xl font-black text-brand-yellow">5</dt>
         <div className="relative mx-auto w-full max-w-md">
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-brand-blue/10 blur-2xl" />
           <div className="relative animate-float">
