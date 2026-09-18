@@ -2,21 +2,6 @@ import Image from "next/image";
 import { books } from "@/lib/books";
 import { asset } from "@/lib/config";
 
-const CheckIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="3"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    <path d="M20 6 9 17l-5-5" />
-  </svg>
-);
-
 export default function Books() {
   return (
     <section id="books" className="scroll-mt-20 bg-navy-950 py-20">
@@ -26,7 +11,7 @@ export default function Books() {
             The library
           </span>
           <h2 className="display mt-3 text-4xl text-ink sm:text-5xl">
-            Five books. <span className="text-brand-yellow">Zero jargon.</span>
+            {books.length} books in this series. <span className="text-brand-yellow">Zero jargon.</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
             Each guide takes one big, intimidating topic and breaks it down into
@@ -34,71 +19,67 @@ export default function Books() {
           </p>
         </div>
 
-        <div className="mt-14 flex flex-col gap-8">
-          {books.map((book, i) => (
+        <div className="mt-14 grid gap-7 sm:grid-cols-2 xl:grid-cols-3">
+          {books.map((book) => (
             <article
               key={book.slug}
-              className="group grid gap-6 rounded-2xl border border-white/10 bg-navy-800/60 p-6 transition-colors hover:border-brand-blue/40 sm:grid-cols-[180px_1fr] sm:gap-8 sm:p-8"
+              className="group flex h-full flex-col rounded-2xl border border-white/10 bg-navy-800/60 p-5 transition-colors hover:border-brand-yellow/50 sm:p-6"
             >
-              <div className="mx-auto w-40 sm:mx-0">
-                <div className="relative">
-                  <div
-                    className={`absolute -inset-3 -z-10 rounded-xl blur-xl ${
-                      book.accent === "yellow"
-                        ? "bg-brand-yellow/15"
-                        : "bg-brand-blue/15"
-                    }`}
-                  />
+              <div className="mx-auto w-full max-w-[230px]">
+                <div className="relative aspect-[2/3]">
                   <Image
                     src={asset(book.cover)}
                     alt={`${book.title} cover`}
-                    width={320}
-                    height={480}
-                    className="w-full rounded-lg shadow-xl shadow-black/50 ring-1 ring-white/10 transition-transform duration-300 group-hover:-translate-y-1"
+                    fill
+                    sizes="(max-width: 640px) 60vw, (max-width: 1280px) 30vw, 20vw"
+                    className="rounded-lg object-cover shadow-xl shadow-black/50 ring-1 ring-white/10 transition-transform duration-300 group-hover:-translate-y-1"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col">
-                <span className="text-xs font-semibold uppercase tracking-widest text-muted">
-                  Book {i + 1} · {book.series}
-                </span>
+              <div className="mt-5 flex flex-1 flex-col">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-muted">
+                    {book.series}
+                  </span>
+                  {book.badge && (
+                    <span className="rounded-full border border-brand-yellow/60 bg-brand-yellow/15 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-brand-yellow">
+                      {book.badge}
+                    </span>
+                  )}
+                </div>
+
                 <h3 className="mt-2 font-display text-2xl uppercase leading-tight text-ink">
                   {book.title}
                 </h3>
-                <p
-                  className={`mt-1 hand text-2xl ${
-                    book.accent === "yellow"
-                      ? "text-brand-yellow"
-                      : "text-brand-blue"
-                  }`}
-                >
-                  {book.tagline}
-                </p>
-                <p className="mt-3 max-w-2xl text-muted">{book.description}</p>
 
-                <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-                  {book.highlights.map((h) => (
-                    <li key={h} className="flex gap-2 text-sm text-ink/90">
-                      <CheckIcon />
-                      <span>{h}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-2 hand text-2xl text-brand-blue">{book.tagline}</p>
+                <p className="mt-3 text-muted">{book.description}</p>
 
-                <div className="mt-6 flex flex-wrap items-center gap-3">
+                <div className="mt-6 flex flex-wrap items-center gap-2">
                   <a
                     href={book.amazonUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-bold text-navy-950 transition-transform hover:-translate-y-0.5"
                   >
-                    View on Amazon
+                    Buy on Kindle
                     <span aria-hidden="true">→</span>
                   </a>
-                  <span className="text-xs text-muted">
-                    Available in paperback &amp; Kindle
-                  </span>
+                  {book.amazonUsUrl && (
+                    <a
+                      href={book.amazonUsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-white/5"
+                    >
+                      US store
+                    </a>
+                  )}
+                </div>
+                <p className="mt-2 text-xs text-muted">Opens Amazon in a new tab.</p>
+                <div className="mt-4 border-t border-white/10 pt-3">
+                  <p className="text-xs uppercase tracking-wider text-muted">Kindle and paperback available</p>
                 </div>
               </div>
             </article>
