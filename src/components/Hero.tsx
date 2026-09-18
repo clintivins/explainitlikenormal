@@ -29,37 +29,30 @@ export default function Hero() {
             jargon. No hype. Just answers that make sense.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8">
             <a
               href="#books"
               className="rounded-full bg-brand-yellow px-6 py-3 font-bold text-navy-950 shadow-lg shadow-brand-yellow/20 transition-transform hover:-translate-y-0.5"
             >
-              Browse the books
-            </a>
-            <a
-              href="#about"
-              className="rounded-full border border-white/20 px-6 py-3 font-semibold text-ink transition-colors hover:bg-white/5"
-            >
-              Meet the author
+              Browse the series
             </a>
           </div>
 
-          <dl className="mt-10 flex gap-8">
+          <dl className="mt-10 flex flex-wrap gap-6 border-t border-white/10 pt-5">
             <div>
-              <dt className="text-3xl font-black text-brand-yellow">4</dt>
-              <dd className="text-sm text-muted">Books in the series</dd>
+              <dt className="text-2xl font-black text-brand-yellow">{books.length}</dt>
+              <dd className="text-xs uppercase tracking-wider text-muted">Books</dd>
             </div>
             <div>
-              <dt className="text-3xl font-black text-brand-yellow">20+</dt>
-              <dd className="text-sm text-muted">Years in tech</dd>
+              <dt className="text-2xl font-black text-brand-yellow">20+</dt>
+              <dd className="text-xs uppercase tracking-wider text-muted">Years in tech</dd>
             </div>
             <div>
-              <dt className="text-3xl font-black text-brand-yellow">0</dt>
-              <dd className="text-sm text-muted">Jargon required</dd>
+              <dt className="text-2xl font-black text-brand-yellow">0</dt>
+              <dd className="text-xs uppercase tracking-wider text-muted">Jargon required</dd>
             </div>
           </dl>
         </div>
-              <dt className="text-3xl font-black text-brand-yellow">5</dt>
         <div className="relative mx-auto w-full max-w-md">
           <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-brand-blue/10 blur-2xl" />
           <div className="relative animate-float">
