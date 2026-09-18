@@ -15,6 +15,7 @@ export type Book = {
 export const AUTHOR = {
   name: "Clinton Wesley Ivins",
   series: "Explain It Like I'm Normal",
+  email: "info@explainitnormal.co.uk",
   // Browse series via a live title; prefer homepage CTAs for organic push.
   amazonAuthorUrl: "https://www.amazon.co.uk/dp/B0HJJV1L3H",
 };

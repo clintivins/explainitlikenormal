@@ -6,7 +6,7 @@ export default function Footer() {
   const homeHref = BASE_PATH || "/";
 
   return (
-    <footer id="contact" className="scroll-mt-20 border-t border-white/10 bg-navy-950">
+    <footer className="border-t border-white/10 bg-navy-950">
       <div className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
@@ -27,7 +27,7 @@ export default function Footer() {
               <span aria-hidden="true">→</span>
             </a>
             <a
-              href="mailto:info@explainitnormal.co.uk?subject=Next%20guide%20please"
+              href={`mailto:${AUTHOR.email}?subject=Next%20guide%20please`}
               className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-white/5"
             >
               Tell me when the next guide drops
@@ -74,6 +74,32 @@ export default function Footer() {
             </div>
             <div>
               <h3 className="font-semibold uppercase tracking-widest text-muted">
+                Contact Info
+              </h3>
+              <ul className="mt-4 space-y-2">
+                <li>
+                  <a
+                    href={`mailto:${AUTHOR.email}`}
+                    className="inline-flex items-center gap-2 text-ink/90 hover:text-brand-yellow"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+                      <path d="M3 7l9 6 9-6" />
+                    </svg>
+                    {AUTHOR.email}
+                  </a>
+                </li>
+              </ul>
+              <h3 className="mt-8 font-semibold uppercase tracking-widest text-muted">
                 Connect
               </h3>
               <ul className="mt-4 space-y-2">
@@ -121,7 +147,25 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="mailto:info@explainitnormal.co.uk"
+                    href="https://www.facebook.com/profile.php?id=61594667902758"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-ink/90 hover:text-brand-yellow"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M14 8h3V4h-3c-2.76 0-5 2.24-5 5v3H6v4h3v8h4v-8h3.2l.8-4H13V9c0-.55.45-1 1-1z" />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`mailto:${AUTHOR.email}`}
                     className="inline-flex items-center gap-2 text-ink/90 hover:text-brand-yellow"
                   >
                     <svg
