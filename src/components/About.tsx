@@ -19,7 +19,7 @@ export default function About() {
             <span className="text-brand-yellow">Wesley Ivins</span>
           </h2>
           <p className="hand mt-3 text-3xl text-brand-blue">
-            I don&apos;t just answer questions. I get stuff done.
+            Plain English for people who live with tech, not in it.
           </p>
 
           <div className="mt-8 rounded-2xl border border-white/10 bg-navy-800/60 p-6">
@@ -38,6 +38,22 @@ export default function About() {
         </div>
 
         <div className="space-y-5 text-lg leading-relaxed text-muted">
+          <p>
+            Clinton has spent over 20 years helping organisations understand,
+            secure and use technology in practical ways. He writes the
+            <span className="font-semibold text-ink"> “Explain It Like I&apos;m Normal”</span>
+            {" "}series for readers who want clear answers without technical noise.
+            Based in the United Kingdom, his focus is simple: explain what matters,
+            skip what doesn&apos;t, and help people make confident decisions.
+          </p>
+
+          <details className="group rounded-2xl border border-white/10 bg-navy-800/50 p-5">
+            <summary className="cursor-pointer list-none text-sm font-semibold uppercase tracking-widest text-brand-yellow">
+              <span className="group-open:hidden">Read more</span>
+              <span className="hidden group-open:inline">Show less</span>
+            </summary>
+
+            <div className="mt-4 space-y-5">
           <p>
             Born in Durban, South Africa, Clinton developed an early passion
             for information technology, not only learning how it worked, but
@@ -71,6 +87,8 @@ export default function About() {
             technology should feel useful and accessible, not confusing or
             intimidating.
           </p>
+            </div>
+          </details>
         </div>
       </div>
     </section>

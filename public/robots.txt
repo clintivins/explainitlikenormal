@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://explainitnormal.co.uk/clint/sitemap.xml
